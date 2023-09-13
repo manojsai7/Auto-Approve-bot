@@ -63,7 +63,7 @@ async def op(_, m :Message):
                 ]
             )
             add_user(m.from_user.id)
-            await m.reply_text("**🦊 Hello {}!\nI'm an auto approve BoT \n .\nI can approve users in Groups/Channels.Add me to your chat and promote me to admin with add members permission.\n\n**".format(m.from_user.mention), reply_markup=keyboard)
+            await m.reply_text("**🦊 Hello {}!\nI'm an auto approve BoT.** \n \nI can approve users in Groups/Channels.Add me to your chat and promote me to admin with add members permission.\n\n".format(m.from_user.mention), reply_markup=keyboard)
     
         elif m.chat.type == enums.ChatType.GROUP or enums.ChatType.SUPERGROUP:
             keyboar = InlineKeyboardMarkup(
