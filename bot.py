@@ -55,7 +55,7 @@ async def op(_, m :Message):
             keyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🗯 Add To Your Channel", url="https://t.me/BiggBoss_7_BoT?startchannel=by&admin=invite_users+manage_chat"),
+                        InlineKeyboardButton("🗯 Add To Your Channel🗯 ", url="https://t.me/BiggBoss_7_BoT?startchannel=by&admin=invite_users+manage_chat"),
                        # InlineKeyboardButton(" Support", url="https://t.me/SDBOTz")
                     ],[
                         InlineKeyboardButton("➕ Add me to your Group ➕", url="https://t.me/BiggBoss_7_BoT?startgroup=true")
@@ -63,7 +63,7 @@ async def op(_, m :Message):
                 ]
             )
             add_user(m.from_user.id)
-            await m.reply_photo("https://telegra.ph/file/a782e3bbbe40df8a4bb67.jpg", caption="**🦊 Hello {}!\nI'm an auto approve \n [BoT]({}) Bot.\nI can approve users in Groups/Channels.Add me to your chat and promote me to admin with add members permission.\n\n**".format(m.from_user.mention, "https://t.me/telegram/153"), reply_markup=keyboard)
+            await m.reply_text("**🦊 Hello {}!\nI'm an auto approve BoT \n .\nI can approve users in Groups/Channels.Add me to your chat and promote me to admin with add members permission.\n\n**".format(m.from_user.mention, reply_markup=keyboard)
     
         elif m.chat.type == enums.ChatType.GROUP or enums.ChatType.SUPERGROUP:
             keyboar = InlineKeyboardMarkup(
