@@ -55,10 +55,10 @@ async def op(_, m :Message):
             keyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🗯 Channel", url="https://t.me/SDBOTs_inifinity"),
-                        InlineKeyboardButton("💬 Support", url="https://t.me/SDBOTz")
+                        InlineKeyboardButton("🗯 Add To Your Channel", url="https://t.me/BiggBoss_7_BoT?startchannel=by&admin=invite_users+manage_chat"),
+                       # InlineKeyboardButton("💬 Support", url="https://t.me/SDBOTz")
                     ],[
-                        InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://t.me/SDAutoApproveBot?startgroup")
+                        InlineKeyboardButton("➕ Add me to your Group ➕", url="hhttps://t.me/BiggBoss_7_BoT?startgroup")
                     ]
                 ]
             )
